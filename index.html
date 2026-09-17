@@ -1,0 +1,600 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Cozy Café | Home</title>
+
+  <link rel="stylesheet" href="css/style.css" />
+
+  <style>
+    /* =========================
+       GREEN CAFE THEME
+       ========================= */
+
+    :root {
+      --navy: #1b4332;
+      --green: #2d6a4f;
+      --light-green: #74c69d;
+      --cream: #f4f8f5;
+      --white: #ffffff;
+      --gray: #6b756f;
+    }
+
+    body {
+      background-color: var(--white);
+      color: #26352d;
+    }
+
+    /* Header */
+    header {
+      background-color: var(--navy);
+    }
+
+    .navbar {
+      background-color: var(--navy);
+    }
+
+    .logo-text {
+      color: var(--white);
+    }
+
+    .logo-text span {
+      color: var(--light-green);
+    }
+
+    .nav-links a {
+      color: var(--white);
+    }
+
+    .nav-links a:hover,
+    .nav-links a.active {
+      color: var(--light-green);
+    }
+
+    /* Hero */
+    .hero {
+      background: linear-gradient(
+        135deg,
+        #1b4332,
+        #2d6a4f
+      );
+      color: var(--white);
+    }
+
+    .hero-text h1 {
+      color: var(--white);
+    }
+
+    .hero-text h1 span {
+      color: var(--light-green);
+    }
+
+    .hero-text p {
+      color: #e8f5ed;
+    }
+
+    /* Buttons */
+    .btn-primary {
+      background-color: var(--light-green);
+      color: var(--navy);
+    }
+
+    .btn-primary:hover {
+      background-color: var(--white);
+      color: var(--navy);
+    }
+
+    .btn-outline {
+      color: var(--white);
+      border-color: var(--white);
+    }
+
+    .btn-outline:hover {
+      background-color: var(--white);
+      color: var(--navy);
+    }
+
+    /* Section */
+    .section-title h2 {
+      color: var(--navy);
+    }
+
+    .section-title p {
+      color: var(--gray);
+    }
+
+    /* Feature Cards */
+    .feature-card {
+      background-color: var(--white);
+      border-color: #d8e8df;
+    }
+
+    .feature-card h3 {
+      color: var(--green);
+    }
+
+    .feature-card p {
+      color: var(--gray);
+    }
+
+    .feature-card:hover {
+      box-shadow: 0 10px 25px rgba(27, 67, 50, 0.15);
+    }
+
+    /* Stats */
+    .stats-bar {
+      background-color: transparent;
+    }
+
+    .stat h3 {
+      color: var(--light-green);
+    }
+
+    .stat p {
+      color: var(--white);
+    }
+
+    /* Menu */
+    .alt-bg {
+      background-color: var(--cream);
+    }
+
+    .course-card {
+      background-color: var(--white);
+      border-color: #d8e8df;
+    }
+
+    .course-card:hover {
+      box-shadow: 0 10px 25px rgba(27, 67, 50, 0.15);
+    }
+
+    .course-img {
+      background-color: #e5f2ea;
+    }
+
+    .course-body h3 {
+      color: var(--navy);
+    }
+
+    .course-body p {
+      color: var(--gray);
+    }
+
+    /* Footer */
+    footer {
+      background-color: var(--navy);
+      color: var(--white);
+    }
+
+    .footer-inner h4 {
+      color: var(--light-green);
+    }
+
+    .footer-inner p {
+      color: #dcebe3;
+    }
+
+    .footer-inner a {
+      color: var(--white);
+    }
+
+    .footer-inner a:hover {
+      color: var(--light-green);
+    }
+
+    .footer-bottom {
+      background-color: #143326;
+      color: #c9ddd2;
+    }
+
+    /* Mobile Menu */
+    .menu-toggle span {
+      background-color: var(--white);
+    }
+  </style>
+
+</head>
+
+<body>
+
+  <!-- ================= HEADER ================= -->
+  <header>
+    <nav class="navbar">
+
+      <a href="index.html" class="logo">
+        <img src="images/logo.svg" alt="Cozy Café logo" />
+        <span class="logo-text">COZY <span>CAFÉ</span></span>
+      </a>
+
+      <ul class="nav-links" id="navLinks">
+        <li><a href="index.html" class="active">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="menu.html">Menu</a></li>
+        <li><a href="articles.html">Articles</a></li>
+        <li><a href="promotion.html">Promotion</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+
+      <button class="menu-toggle" id="menuToggle" aria-label="Toggle menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+
+    </nav>
+  </header>
+
+
+  <!-- ================= HERO ================= -->
+  <section class="hero">
+    <div class="hero-inner">
+
+      <div class="hero-text">
+        <h1>Welcome to <span>Cozy Café</span></h1>
+
+        <p>
+          A warm and relaxing café where delicious coffee, fresh desserts
+          and good moments come together. Come enjoy your favorite drink,
+          meet your friends, work or simply take a break from your busy day.
+        </p>
+
+        <a href="menu.html" class="btn btn-primary">
+          Explore Our Menu
+        </a>
+
+        <a href="contact.html" class="btn btn-outline">
+          Visit Us
+        </a>
+      </div>
+
+      <div class="hero-image">
+        <img
+          src="images/hero.svg"
+          alt="Coffee and desserts at Cozy Café"
+        />
+      </div>
+
+    </div>
+  </section>
+
+
+  <!-- ================= FEATURES ================= -->
+  <section>
+    <div class="section-inner">
+
+      <div class="section-title">
+        <h2>Why Choose Cozy Café?</h2>
+
+        <p>
+          Great coffee, delicious food and a comfortable atmosphere
+          for every moment.
+        </p>
+      </div>
+
+
+      <div class="features-grid">
+
+        <div class="feature-card">
+          <img
+            src="images/icon-coffee.svg"
+            alt="Coffee icon"
+          />
+
+          <h3>Premium Coffee</h3>
+
+          <p>
+            Freshly brewed coffee made from carefully selected
+            quality beans by our skilled baristas.
+          </p>
+        </div>
+
+
+        <div class="feature-card">
+          <img
+            src="images/icon-food.svg"
+            alt="Food icon"
+          />
+
+          <h3>Fresh & Delicious</h3>
+
+          <p>
+            Enjoy freshly prepared cakes, pastries, sandwiches
+            and delicious snacks made with quality ingredients.
+          </p>
+        </div>
+
+
+        <div class="feature-card">
+          <img
+            src="images/icon-quality.svg"
+            alt="Quality icon"
+          />
+
+          <h3>Quality Service</h3>
+
+          <p>
+            Friendly and attentive service to make every visit
+            comfortable and memorable.
+          </p>
+        </div>
+
+
+        <div class="feature-card">
+          <img
+            src="images/icon-support.svg"
+            alt="Cozy atmosphere icon"
+          />
+
+          <h3>Cozy Atmosphere</h3>
+
+          <p>
+            A warm and relaxing space perfect for studying,
+            working, meeting friends or enjoying some quiet time.
+          </p>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+
+  <!-- ================= STATS ================= -->
+  <section class="hero">
+
+    <div class="section-inner stats-bar">
+
+      <div class="stat">
+        <h3>5+</h3>
+        <p>Years of Service</p>
+      </div>
+
+      <div class="stat">
+        <h3>30+</h3>
+        <p>Menu Items</p>
+      </div>
+
+      <div class="stat">
+        <h3>10K+</h3>
+        <p>Happy Customers</p>
+      </div>
+
+      <div class="stat">
+        <h3>100%</h3>
+        <p>Made with Care</p>
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <!-- ================= MENU PREVIEW ================= -->
+  <section class="alt-bg">
+
+    <div class="section-inner">
+
+      <div class="section-title">
+        <h2>Our Favorites</h2>
+
+        <p>
+          Discover some of our most popular drinks and treats.
+        </p>
+      </div>
+
+
+      <div class="courses-grid">
+
+        <!-- Coffee -->
+        <div class="course-card">
+
+          <div class="course-img">
+            <img
+              src="images/coffee.svg"
+              alt="Signature Coffee"
+            />
+          </div>
+
+          <div class="course-body">
+            <h3>Signature Coffee</h3>
+
+            <p>
+              Our special house coffee with a rich aroma
+              and smooth flavor.
+            </p>
+          </div>
+
+        </div>
+
+
+        <!-- Latte -->
+        <div class="course-card">
+
+          <div class="course-img">
+            <img
+              src="images/latte.svg"
+              alt="Cafe Latte"
+            />
+          </div>
+
+          <div class="course-body">
+            <h3>Café Latte</h3>
+
+            <p>
+              Rich espresso combined with creamy steamed milk
+              for a smooth and delicious taste.
+            </p>
+          </div>
+
+        </div>
+
+
+        <!-- Matcha -->
+        <div class="course-card">
+
+          <div class="course-img">
+            <img
+              src="images/matcha.svg"
+              alt="Matcha Latte"
+            />
+          </div>
+
+          <div class="course-body">
+            <h3>Matcha Latte</h3>
+
+            <p>
+              Premium matcha blended with smooth and creamy milk.
+            </p>
+          </div>
+
+        </div>
+
+
+        <!-- Cake -->
+        <div class="course-card">
+
+          <div class="course-img">
+            <img
+              src="images/cake.svg"
+              alt="Chocolate Cake"
+            />
+          </div>
+
+          <div class="course-body">
+            <h3>Chocolate Cake</h3>
+
+            <p>
+              Soft and rich chocolate cake, perfect with
+              your favorite coffee.
+            </p>
+          </div>
+
+        </div>
+
+
+        <!-- Croissant -->
+        <div class="course-card">
+
+          <div class="course-img">
+            <img
+              src="images/croissant.svg"
+              alt="Fresh Croissant"
+            />
+          </div>
+
+          <div class="course-body">
+            <h3>Fresh Croissant</h3>
+
+            <p>
+              Buttery, crispy and freshly baked every day.
+            </p>
+          </div>
+
+        </div>
+
+      </div>
+
+
+      <div style="text-align:center; margin-top:36px;">
+
+        <a
+          href="menu.html"
+          class="btn btn-primary"
+          style="background-color: var(--navy); color:#fff;"
+        >
+          See Full Menu
+        </a>
+
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <!-- ================= FOOTER ================= -->
+  <footer>
+
+    <div class="footer-inner">
+
+      <div>
+
+        <h4>Cozy Café</h4>
+
+        <p>
+          Your cozy neighborhood café serving quality coffee,
+          delicious food and memorable moments.
+        </p>
+
+      </div>
+
+
+      <div>
+
+        <h4>Quick Links</h4>
+
+        <ul>
+
+          <li>
+            <a href="about.html">About Us</a>
+          </li>
+
+          <li>
+            <a href="menu.html">Menu</a>
+          </li>
+
+          <li>
+            <a href="articles.html">Articles</a>
+          </li>
+
+          <li>
+            <a href="promotion.html">Promotions</a>
+          </li>
+
+        </ul>
+
+      </div>
+
+
+      <div>
+
+        <h4>Contact</h4>
+
+        <ul>
+
+          <li>
+            Phone: 089-123-4567
+          </li>
+
+          <li>
+            Email: info@cozycafe.com
+          </li>
+
+          <li>
+            Open Daily: 08:00 - 20:00
+          </li>
+
+        </ul>
+
+      </div>
+
+    </div>
+
+
+    <div class="footer-bottom">
+
+      &copy;
+      <span id="year"></span>
+      Cozy Café.
+      All Rights Reserved.
+
+    </div>
+
+  </footer>
+
+
+  <script src="js/script.js"></script>
+
+</body>
+</html>
